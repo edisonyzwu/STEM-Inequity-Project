@@ -1,0 +1,48 @@
+html,
+body {
+  font-size: 16px;
+  font-family: serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  margin-top: 2rem;
+}
+
+.byline {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+img {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+.chart {
+  margin: 2rem 0 3rem 0;
+}
+
+.map {
+  width: 80%;
+  margin: auto;
+  padding: 1rem 0 1rem 0;
+}
+
+footer {
+  border-top-style: solid;
+  padding: 2rem 0 2rem 0;
+  font-size: 14px;
+  font-family: sans-serif;
+  color: rgb(90, 89, 89);
+  font-style: italic;
+}
+
+footer p {
+  padding: 0rem;
+}

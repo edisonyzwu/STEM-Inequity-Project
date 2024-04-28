@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/simple-grid.css" />
+    <link rel="stylesheet" href="./assets/main.css" />
+    <title>STEM Inequity In America</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>STEM Inequity In America</h1>
+      <p class="byline">By Edison Wu</p>
+      <p class="dec">
+        The gender gap within the STEM (Science, Technology, Engineering, and Mathematics) fields
+        remains a persistent challenge in the United States. To quantify this disparity, I delved
+        into the American Community Survey data, examining the distribution of men and women across
+        various STEM occupations and the income gap between the genders, as well as trends
+        indicating whether the situation is improving.
+      </p>
+      <p>
+        For the analysis, I classified all 119 STEM occupations into 9 categories, following the
+        U.S. Bureau of Labor Statistics criteria. The data was then meticulously collected,
+        cleansed, analyzed, and visualized using R.
+      </p>
+      <h2>Female Representation in STEM</h2>
+      <div class="chart">
+        <iframe
+          src="graphic.html"
+          style="width: 90%; height: 400px; border: none; align-items: left"
+        ></iframe>
+      </div>
+      <p>
+        The visualization portrays the representation of females across all STEM occupations
+        nationwide. Each point denotes an occupation; its x-axis position reflects the percentage of
+        females within it.
+      </p>
+      <p>
+        The data reveals a stark underrepresentation of women in quintessential STEM roles such as
+        engineering, architecture, computer science, and physical sciences. Conversely, in fields
+        like healthcare, social science, and life sciences, certain occupations have a higher female
+        employment rate.
+      </p>
+      <h2>Income Disparity in STEM</h2>
+      <div class="chart">
+        <img src="./assets/line-chart.jpg" alt="" />
+      </div>
+      <p>
+        This line chart delineates the annual evolution of the Female to Male income ratio from 2008
+        to 2022 across all STEM categories. On average, females earn approximately 86% of their male
+        counterparts' income, highlighting a 14% pay gap. A comparison of data from 2008 and 2022
+        starkly indicates that the overall situation of STEM inequity has not shown signs of
+        significant improvement.
+      </p>
+      <h2>A Closer Look at California's STEM Inequity</h2>
+      <p>
+        To gain deeper insights, I focused on California's computer science and mathematics
+        occupation, analyzing the change in STEM inequity from 2019 to 2022 across various counties.
+      </p>
+      <div class="row map">
+        <article class="col-6">
+          <iframe
+            title="Gender Income Disparity in Computer and Mathematics Fields in California in 2019"
+            aria-label="Map"
+            id="datawrapper-chart-uXiYm"
+            src="https://datawrapper.dwcdn.net/uXiYm/4/"
+            scrolling="no"
+            frameborder="0"
+            style="width: 0; min-width: 100% !important; border: none"
+            height="848"
+            data-external="1"
+          ></iframe>
+          <script type="text/javascript">
+            !(function () {
+              "use strict";
+              window.addEventListener("message", function (a) {
+                if (void 0 !== a.data["datawrapper-height"]) {
+                  var e = document.querySelectorAll("iframe");
+                  for (var t in a.data["datawrapper-height"])
+                    for (var r = 0; r < e.length; r++)
+                      if (e[r].contentWindow === a.source) {
+                        var i = a.data["datawrapper-height"][t] + "px";
+                        e[r].style.height = i;
+                      }
+                }
+              });
+            })();
+          </script>
+        </article>
+        <article class="col-6">
+          <iframe
+            title="Gender Income Disparity in Computer and Mathematics Fields in California in 2022"
+            aria-label="Map"
+            id="datawrapper-chart-3Q9jp"
+            src="https://datawrapper.dwcdn.net/3Q9jp/3/"
+            scrolling="no"
+            frameborder="0"
+            style="width: 0; min-width: 100% !important; border: none"
+            height="848"
+            data-external="1"
+          ></iframe>
+          <script type="text/javascript">
+            !(function () {
+              "use strict";
+              window.addEventListener("message", function (a) {
+                if (void 0 !== a.data["datawrapper-height"]) {
+                  var e = document.querySelectorAll("iframe");
+                  for (var t in a.data["datawrapper-height"])
+                    for (var r = 0; r < e.length; r++)
+                      if (e[r].contentWindow === a.source) {
+                        var i = a.data["datawrapper-height"][t] + "px";
+                        e[r].style.height = i;
+                      }
+                }
+              });
+            })();
+          </script>
+        </article>
+      </div>
+
+      <p>
+        Comparative maps reveal a deteriorating trend in gender income disparity across multiple
+        counties. Notably, the Bay Area, known for its technology sector, shows relatively stable
+        gender gap changes.
+      </p>
+      <p>
+        In STEM, inclusivity could drive innovation and economic equality. With the continuation of
+        data-driven approaches, we can better understand and, more importantly, craft targeted
+        solutions to bridge the gender gap in STEM.
+      </p>
+      <footer>
+        <p>1. The methodology and code for this project are available on my GitHub page.</p>
+        <p>2. All data is from ACS-1 Year Data (missing 2020 data because of the pandemic).</p>
+
+        <p>
+          3. Occupation codes are based on the
+          <a href="https://www.bls.gov/soc/Attachment_C_STEM_2018.pdf">
+            Standard Occupational Classification
+          </a>
+          .
+        </p>
+
+        <p>
+          4. Occupation categorization are based on the list of
+          <a
+            href="https://www.census.gov/data/tables/time-series/demo/income-poverty/stem-occ-sex-med-earnings.html"
+          >
+            Census Bureau website
+          </a>
+          .
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
