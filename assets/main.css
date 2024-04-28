@@ -36,6 +36,7 @@ img {
 
 footer {
   border-top-style: solid;
+  border-top-color: gray;
   padding: 2rem 0 2rem 0;
   font-size: 14px;
   font-family: sans-serif;
